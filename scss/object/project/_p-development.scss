@@ -1,0 +1,151 @@
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+
+.p-development {
+  &__description {
+    text-align: center;
+    line-height: 1.8;
+    @include mq {
+      font-size: 2rem;
+    }
+  }
+
+  &__link {
+    position: relative;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-image: url('/assets/images/sample_heroImage.png');
+    background-size: cover;
+    background-position: center; 
+    margin: 0 auto 40px;
+
+    &-text {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $color-white;
+    }
+
+    &-icon {
+      width: 11px;
+      height: auto;
+    }
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  .p-development__items {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .p-development-item {
+    display: flex;
+    flex-direction: column;
+    @include mq {
+      flex-direction: row;
+      align-items: center;
+      gap: 36px;
+
+      &:nth-of-type(1) {
+        flex-direction: row-reverse; 
+      }
+      &:nth-of-type(2) {
+        order: -1;
+      }
+    }
+
+    &__image-container {
+      width: 100%;
+      margin: 0 auto 24px;
+      @include mq {
+        margin: 0;
+        max-width: none;
+        width: 40%;
+      }
+    }
+
+    &__image {
+      width: 80%;
+      margin: auto;
+      @include mq {
+        width: 100%;
+      }
+    }
+
+    &__content {
+      max-width: 600px;
+    }
+
+    &__title {
+      text-align: center;
+      margin-bottom: .8rem;
+      font-size: 2.8rem;
+      @include mq {
+        text-align: left;
+      }
+    }
+
+    &__description {
+      margin-bottom: 2.4rem;
+      line-height: 1.8;
+    }
+
+    &__steps {
+      counter-reset: step; 
+      position: relative;
+      padding-left: 36px;
+    
+      &::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: 10px;
+        width: 2px;
+        height: 110%;
+        background-color: #DBE5FF;
+      }
+      &::after {
+        content: '';
+        border: 0;
+        border-bottom: solid 2px #DBE5FF;
+        border-right: solid 2px #DBE5FF;
+        display: inline-block;
+        transform: rotate(45deg);
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        bottom: -17px;
+        left: 6px;
+      }
+    }
+
+    &__step {
+      position: relative;
+      padding: 5px 0;
+  
+      &::before {
+        content: counter(step);
+        counter-increment: step 1;
+        position: absolute;
+        left: -35px;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        background-color: #819FEC;
+        color: white;
+        text-align: center;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transform: translateY(-50%);
+        line-height: 20px;
+      }
+    }
+  }
+}

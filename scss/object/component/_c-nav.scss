@@ -1,0 +1,62 @@
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+.c-nav {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 85%;
+  height: 100%;
+  background: $color-white;
+  z-index: 1000;
+  animation: slideinRight .4s;
+  padding: 4rem 3rem;
+  @include mq {
+    display: flex;
+    position: static;
+    animation: none;
+    justify-content: end;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 0;
+    z-index: 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    @include mq {
+      flex-direction: row;
+      padding: 0;
+      align-items: center;
+      margin-right: 3.2rem;
+    }
+  }
+
+  &__button {
+    border-radius: 0;
+    margin-top: 2rem;
+    width: 100%;
+    @include mq {
+      margin-top: 0;
+      width: fit-content;
+    }
+  }
+
+  &__link {
+    &:hover {
+      color: #3359B8;
+    }
+  }
+}
+
+@keyframes slideinRight {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

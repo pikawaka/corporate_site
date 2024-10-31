@@ -1,0 +1,38 @@
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+.c-cta {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6.4rem 2rem;
+  background-size: cover;
+  background-position: center;
+  @include mq {
+    padding: 8rem 2rem;
+  }
+  
+  &--green {
+    background-image: url('/assets/images/contact_cta_green.png');
+  }
+  &--blue {
+    background-image: url('/assets/images/contact_cta_blue.png');
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__text {
+    color: $color-white;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    margin-bottom: 2.4rem;
+    @include mq {
+      font-size: 3.2rem;
+    }
+  }
+}

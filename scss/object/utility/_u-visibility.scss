@@ -1,0 +1,18 @@
+@use "../../foundation/mixin" as *;
+/* モバイルのみ表示 */
+.u-show-mobile {
+  display: block;
+
+  @include mq {
+    display: none;
+  }
+}
+
+/* PCのみ表示 */
+.u-show-desktop {
+  display: none;
+
+  @include mq {
+    display: block;
+  }
+}

@@ -1,0 +1,64 @@
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+.c-button {
+  border-radius: 2px;
+  padding: 1.6rem 3.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  // 背景色-文字色
+  &--navy-white {
+    background-color: $color-navy;
+    color: $color-white;
+
+    &:hover {
+      background-color: #3359B8;
+    }
+  }
+
+  &--blue-white {
+    background-color: $color-blue;
+    color: $color-white;
+
+    &:hover {
+      background-color: #3359B8;
+    }
+  }
+
+  &--white-navy {
+    background-color: $color-white;
+    color: $color-navy;
+
+    &:hover {
+      background-color: #DFEDF6;
+    }
+  }
+
+  &--white-green {
+    background-color: $color-white;
+    color: $color-green;
+
+    &:hover {
+      background-color: #DFF6E7;
+    }
+  }
+
+  &--small {
+    font-size:1.4rem;
+  }
+
+  @include mq {
+    width: fit-content;
+
+    &--small {
+      font-size: 1.6rem;
+    }
+  
+  }
+}
