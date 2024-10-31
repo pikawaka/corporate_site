@@ -895,29 +895,18 @@ img {
   line-height: 1.5;
 }
 
-.p-index {
-  /*--------------------------------------*
-  * hero
-  *--------------------------------------*/
-  /*--------------------------------------*
-  * message
-  *--------------------------------------*/
-  /*--------------------------------------*
-  * company
-  *--------------------------------------*/
-}
-.p-index .p-index-section {
+.p-index-section {
   padding: 4rem 2rem;
 }
 @media screen and (min-width: 768px) {
-  .p-index .p-index-section {
+  .p-index-section {
     padding: 8rem 2rem;
   }
 }
-.p-index .p-index-section:nth-child(odd) {
+.p-index-section:nth-child(odd) {
   background-color: #F6F7F8;
 }
-.p-index .p-index-section__title-container {
+.p-index-section__title-container {
   position: relative;
   height: 8rem;
   margin-bottom: 4rem;
@@ -926,11 +915,11 @@ img {
   align-items: center;
 }
 @media screen and (min-width: 768px) {
-  .p-index .p-index-section__title-container {
+  .p-index-section__title-container {
     height: 14rem;
   }
 }
-.p-index .p-index-section__pretext {
+.p-index-section__pretext {
   display: block;
   font-size: 8rem;
   font-family: "Roboto Mono", monospace;
@@ -939,32 +928,32 @@ img {
   text-align: center;
   line-height: 1;
 }
-.p-index .p-index-section__pretext--training {
+.p-index-section__pretext--training {
   font-size: 6rem;
   color: #fff;
 }
-.p-index .p-index-section__pretext--development {
+.p-index-section__pretext--development {
   font-size: 5rem;
 }
-.p-index .p-index-section__pretext--for-commerce {
+.p-index-section__pretext--for-commerce {
   font-size: 4.6rem;
   color: #fff;
 }
-.p-index .p-index-section__pretext--contact {
+.p-index-section__pretext--contact {
   top: 60%;
   color: #fff;
 }
 @media screen and (min-width: 768px) {
-  .p-index .p-index-section__pretext {
+  .p-index-section__pretext {
     font-size: 10rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .p-index .p-index-section__pretext {
+  .p-index-section__pretext {
     font-size: 14rem;
   }
 }
-.p-index .p-index-section__title {
+.p-index-section__title {
   font-size: 2.4rem;
   position: absolute;
   top: 54%;
@@ -973,41 +962,45 @@ img {
   width: 100%;
   text-align: center;
 }
-.p-index .p-index-section__title--message {
+.p-index-section__title--message {
   font-size: 3.2rem;
 }
 @media screen and (min-width: 768px) {
-  .p-index .p-index-section__title {
+  .p-index-section__title {
     font-size: 3.2rem;
   }
 }
-.p-index .p-index-section__description {
+.p-index-section__description {
   text-align: center;
   line-height: 1.8;
 }
-.p-index .p-index-hero {
+
+/*--------------------------------------*
+* hero
+*--------------------------------------*/
+.p-index-hero {
   background-image: url("/assets/images/heroImage01--SP.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) {
-  .p-index .p-index-hero {
+  .p-index-hero {
     background-image: url("/assets/images/heroImage01--PC.png");
   }
 }
-.p-index .p-index-hero--index2 {
+.p-index-hero--index2 {
   background-image: url("/assets/images/heroImage02--SP.png");
 }
 @media screen and (min-width: 768px) {
-  .p-index .p-index-hero--index2 {
+  .p-index-hero--index2 {
     background-image: url("/assets/images/heroImage02--PC.png");
   }
 }
-.p-index .p-index-hero--index2 .p-index-hero__text {
+.p-index-hero--index2 .p-index-hero__text {
   color: #fff;
 }
-.p-index .p-index-hero__inner {
+.p-index-hero__inner {
   max-width: 800px;
   margin: 0 auto;
   display: flex;
@@ -1017,68 +1010,76 @@ img {
   padding: 4.5rem 2rem 2.8rem;
 }
 @media screen and (min-width: 768px) {
-  .p-index .p-index-hero__inner {
+  .p-index-hero__inner {
     padding: 8rem 0.5rem 6rem;
   }
 }
-.p-index .p-index-hero__title {
+.p-index-hero__title {
   margin-bottom: 0.7rem;
   padding: 0 1rem;
 }
-.p-index .p-index-hero__title img {
+.p-index-hero__title img {
   max-width: 520px;
 }
 @media screen and (min-width: 768px) {
-  .p-index .p-index-hero__title {
+  .p-index-hero__title {
     margin-bottom: 2rem;
   }
 }
-.p-index .p-index-hero__text {
+.p-index-hero__text {
   font-size: 1.4rem;
   margin-bottom: 1.2rem;
 }
 @media screen and (min-width: 768px) {
-  .p-index .p-index-hero__text {
+  .p-index-hero__text {
     font-size: 1.6rem;
     margin-bottom: 2.5rem;
   }
 }
-.p-index .p-index-message {
+
+/*--------------------------------------*
+* message
+*--------------------------------------*/
+.p-index-message {
   font-family: "YuMincho", sans-serif;
 }
-.p-index .p-index-message__text {
+.p-index-message__text {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 2.6rem;
 }
-.p-index .p-index-message__text p {
+.p-index-message__text p {
   line-height: 1.8;
 }
 @media screen and (min-width: 768px) {
-  .p-index .p-index-message__text p {
+  .p-index-message__text p {
     font-size: 1.8rem;
     line-height: 2;
   }
 }
-.p-index .p-index-company__container {
+
+/*--------------------------------------*
+* company
+*--------------------------------------*/
+.p-index-company__container {
   display: flex;
   flex-direction: column;
   max-width: 960px;
   margin: auto;
 }
-.p-index .p-index-company__item {
+.p-index-company__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #E8EAEF;
   padding: 1.6rem 0;
 }
-.p-index .p-index-company__label {
+.p-index-company__label {
   flex: 0 0 30%;
   font-weight: bold;
 }
-.p-index .p-index-company__content {
+.p-index-company__content {
   flex-grow: 1;
   line-height: 1.5;
 }
