@@ -396,7 +396,7 @@ img {
   transform: translateY(-50%);
   width: 14px;
   height: 26px;
-  background-image: url("/assets/images/arrow.png");
+  background-image: url("../images/arrow.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -427,10 +427,10 @@ img {
   }
 }
 .c-cta--green {
-  background-image: url("/assets/images/contact_cta_green.png");
+  background-image: url("../images/contact_cta_green.png");
 }
 .c-cta--blue {
-  background-image: url("/assets/images/contact_cta_blue.png");
+  background-image: url("../images/contact_cta_blue.png");
 }
 .c-cta__inner {
   position: relative;
@@ -713,7 +713,7 @@ img {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  background-image: url("/assets/images/sample_heroImage.png");
+  background-image: url("../images/sample_heroImage.png");
   background-size: cover;
   background-position: center;
   margin: 0 auto 40px;
@@ -979,22 +979,22 @@ img {
 * hero
 *--------------------------------------*/
 .p-index-hero {
-  background-image: url("/assets/images/heroImage01--SP.png");
+  background-image: url("../images/heroImage01--SP.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) {
   .p-index-hero {
-    background-image: url("/assets/images/heroImage01--PC.png");
+    background-image: url("../images/heroImage01--PC.png");
   }
 }
 .p-index-hero--index2 {
-  background-image: url("/assets/images/heroImage02--SP.png");
+  background-image: url("../images/heroImage02--SP.png");
 }
 @media screen and (min-width: 768px) {
   .p-index-hero--index2 {
-    background-image: url("/assets/images/heroImage02--PC.png");
+    background-image: url("../images/heroImage02--PC.png");
   }
 }
 .p-index-hero--index2 .p-index-hero__text {
@@ -1094,13 +1094,13 @@ img {
   padding: 2rem 1rem;
   background-size: cover;
   background-position: center;
-  background-image: url("/assets/images/sample_heroImage.png");
+  background-image: url("../images/sample_heroImage.png");
 }
 .p-page-header--training {
-  background-image: url("/assets/images/training_heroImage.png");
+  background-image: url("../images/training_heroImage.png");
 }
 .p-page-header--development {
-  background-image: url("/assets/images/development_heroImage.png");
+  background-image: url("../images/development_heroImage.png");
 }
 .p-page-header--nomal {
   height: 200px;
