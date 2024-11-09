@@ -49,11 +49,11 @@
     &::after {
       content: "";
       position: absolute;
-      top: 20px;
+      top: 22px;
       right: 16px;
-      border-right: 8px solid transparent;
-      border-left: 8px solid transparent;
-      border-top: 9px solid #797F8C;
+      border-right: 6px solid transparent;
+      border-left: 6px solid transparent;
+      border-top: 6px solid #797F8C;
       border-bottom: 0;
     }
   }

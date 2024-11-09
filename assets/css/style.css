@@ -99,6 +99,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:hover {
+  transition: 0.2s;
+}
 
 img {
   width: 100%;
@@ -261,6 +264,9 @@ img {
   justify-content: center;
   width: 100%;
 }
+.c-button:hover {
+  transition: 0.2s;
+}
 .c-button--navy-white {
   background-color: #0F2149;
   color: #fff;
@@ -381,7 +387,7 @@ img {
   display: inline-block;
 }
 .c-card__content {
-  padding: 1.6rem 2.4rem;
+  padding: 2rem 3rem;
   flex-grow: 1;
 }
 .c-card__content--link {
@@ -492,11 +498,11 @@ img {
 .c-form__select-container::after {
   content: "";
   position: absolute;
-  top: 20px;
+  top: 22px;
   right: 16px;
-  border-right: 8px solid transparent;
-  border-left: 8px solid transparent;
-  border-top: 9px solid #797F8C;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  border-top: 6px solid #797F8C;
   border-bottom: 0;
 }
 
@@ -866,6 +872,7 @@ img {
   max-width: 280px;
   margin: 0 auto 2.4rem;
   box-shadow: 0px 10px 10px 0px rgba(15, 40, 105, 0.15);
+  border-radius: 10px;
 }
 @media screen and (min-width: 768px) {
   .p-training .p-training-item__image {
@@ -1096,6 +1103,11 @@ img {
   background-position: center;
   background-image: url("../images/sample_heroImage.png");
 }
+@media screen and (min-width: 768px) {
+  .p-page-header {
+    height: 300px;
+  }
+}
 .p-page-header--training {
   background-image: url("../images/training_heroImage.png");
 }
@@ -1105,21 +1117,24 @@ img {
 .p-page-header--nomal {
   height: 200px;
 }
+@media screen and (min-width: 768px) {
+  .p-page-header--nomal {
+    height: 200px;
+  }
+}
 .p-page-header__inner {
   position: relative;
   z-index: 2;
 }
 .p-page-header__title {
   color: #fff;
-  font-size: 2.4m;
-  margin-bottom: 0.5em;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 768px) {
-  .p-page-header {
-    height: 300px;
-  }
-  .p-page-header--nomal {
-    height: 200px;
+  .p-page-header__title {
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
   }
 }
 

@@ -11,6 +11,9 @@
   background-size: cover;
   background-position: center;
   background-image: url('/assets/images/sample_heroImage.png');
+  @include mq {
+    height: 300px;
+  }
   
   &--training {
     background-image: url('/assets/images/training_heroImage.png');
@@ -20,6 +23,9 @@
   }
   &--nomal {
     height: 200px;
+    @include mq {
+      height: 200px;
+    }
   }
 
   &__inner {
@@ -29,15 +35,12 @@
 
   &__title {
     color: $color-white;
-    font-size: 2.4m;
-    margin-bottom: 0.5em;
-  }
-
-  @include mq {
-    height: 300px;
-
-    &--nomal {
-      height: 200px;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    @include mq {
+      font-size: 3.2rem;
+      margin-bottom: 4rem;
     }
   }
+
 }
