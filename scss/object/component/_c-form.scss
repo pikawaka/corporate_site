@@ -1,0 +1,60 @@
+.c-form {
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.4rem;
+  }
+
+  &__label  {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .8rem;
+    margin-bottom: 1rem;
+  }
+
+  &__required {
+    color: #EE5266;
+    font-size: 1.4rem;
+  }
+
+  &__help {
+    color: #999FAF;
+    font-size: 1.4rem;
+  }
+
+  &__field {
+    border: 1px solid #C2C8D7;
+    border-radius: 2px;
+    padding: 10px 16px;
+  }
+
+  &__textarea {
+    height: 300px;
+  }
+
+  &__select {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+
+    &:invalid {
+      color: #A9B1C3;
+    }
+  }
+
+  &__select-container {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      right: 16px;
+      border-right: 6px solid transparent;
+      border-left: 6px solid transparent;
+      border-top: 6px solid #797F8C;
+      border-bottom: 0;
+    }
+  }
+}

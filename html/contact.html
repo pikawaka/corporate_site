@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | 株式会社Pikawaka</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <!-- l-header -->
+  <header class="l-header">
+    <div class="l-header__inner">
+      <a class="c-logo c-logo--header" href="index.html">
+        <img src="../assets/images/logo.png" alt="株式会社Pikawaka">
+      </a>
+      <button class="c-menu-button js-menu-toggle" aria-label="メニュー開閉">
+        <span class="c-menu-button__line"></span>
+        <span class="c-menu-button__line"></span>
+      </button>
+      <div class="c-overlay"></div>
+      <nav class="c-nav">
+        <ul class="c-nav__list">
+          <li class="c-nav__item">
+            <a href="training.html" class="c-nav__link">法人向け研修事業</a>
+          </li>
+          <li class="c-nav__item">
+            <a href="development.html" class="c-nav__link">Webアプリ開発・UI/UXデザイン</a>
+          </li>
+          <li class="c-nav__item">
+            <a href="https://pikawaka.com/" target=”_blank” class="c-nav__link">オウンドメディア</a>
+          </li>
+          <li class="c-nav__item">
+            <a href="index.html#company" class="c-nav__link">会社情報</a>
+          </li>
+        </ul>
+        <a href="contact.html" class="c-button c-button--blue-white c-nav__button">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="l-main">
+    <section class="p-page-header p-page-header--nomal">
+      <div class="p-page-header__inner">
+        <h1 class="p-page-header__title u-m-0">お問い合わせ</h1>
+      </div>
+    </section>
+    <nav class="c-breadcrumbs u-mb-20 u-mb-40-md">
+      <ul class="c-breadcrumbs__list">
+        <li class="c-breadcrumbs__item"><a href="index.html" class="c-breadcrumbs__link">TOP</a></li>
+        <li class="c-breadcrumbs__item">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    
+    <!-- contact -->
+    <section class="p-contact c-section c-section--mw-1000 u-mb-40-md">
+      <form class="c-form" action="/submit-contact" method="POST">
+        <div class="c-form__group">
+          <label class="c-form__label" for="company-name">会社・団体名<span class="c-form__required">*必須</span></label>
+          <input type="text" id="company-name" name="company_name" required class="c-form__field c-form__input">
+        </div>
+        
+        <div class="c-form__group">
+          <label class="c-form__label" for="department">部署名</label>
+          <input type="text" id="department" name="department" class="c-form__field c-form__input">
+        </div>
+        
+        <div class="c-form__group">
+          <label class="c-form__label" for="last-name">姓<span class="c-form__required">*必須</span></label>
+          <input type="text" id="last-name" name="last_name" required class="c-form__field c-form__input">
+        </div>
+        
+        <div class="c-form__group">
+          <label class="c-form__label" for="first-name">名<span class="c-form__required">*必須</span></label>
+          <input type="text" id="first-name" name="first_name" required class="c-form__field c-form__input">
+        </div>
+        
+        <div class="c-form__group">
+          <label class="c-form__label" for="email">
+            メールアドレス
+            <span class="c-form__required">*必須</span>
+            <small class="c-form__help">会社でお使いのメールアドレスをご記入ください。</small>
+          </label>
+          <input type="email" id="email" name="email" required class="c-form__field c-form__input">
+        </div>
+        
+        <div class="c-form__group">
+          <label class="c-form__label" for="phone">電話番号</label>
+          <input type="tel" id="phone" name="phone" class="c-form__field c-form__input">
+        </div>
+        
+        <div class="c-form__group">
+          <label class="c-form__label" for="category">お問い合わせ内容のカテゴリ<span class="c-form__required">*必須</span></label>
+          <div class="c-form__select-container">
+            <select id="category" name="category" required class="c-form__field c-form__select">>
+              <option value="" disabled selected>選択してください</option>
+              <option value="corporate-training">法人研修</option>
+              <option value="website-creation">Webサイト制作</option>
+              <option value="web-app-development">Webアプリケーション開発</option>
+              <option value="other">その他</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="c-form__group u-mb-40">
+          <label class="c-form__label" for="message">ご相談内容<span class="c-form__required">*必須</span></label>
+          <textarea id="message" name="message" required class="c-form__field c-form__textarea"></textarea>
+        </div>
+        
+        <div class="c-form__group">
+          <button type="submit" class="c-button c-button--navy-white u-mx-auto">お問い合わせを送信する</button>
+        </div>
+      </form>
+    </section>
+
+  <!-- footer -->
+  <footer class="l-footer">
+    <div class="l-footer__inner">
+      <a class="c-logo c-logo--footer" href="index.html">
+        <img src="../assets/images/logo.png" alt="株式会社Pikawaka">
+      </a>
+      <nav class="l-footer__nav">
+        <ul class="l-footer__nav-list">
+          <li class="l-footer__nav-item"><a href="training.html" class="l-footer__nav-link">法人向け研修事業</a></li>
+          <li class="l-footer__nav-item"><a href="development.html" class="l-footer__nav-link">Webアプリ開発・UI/UXデザイン</a></li>
+          <li class="l-footer__nav-item"><a href="https://pikawaka.com" target="_blank" class="l-footer__nav-link">オウンドメディア</a></li>
+          <li class="l-footer__nav-item"><a href="index.html#company" class="l-footer__nav-link">会社情報</a></li>
+          <li class="l-footer__nav-item"><a href="contact.html" class="l-footer__nav-link">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <div class="c-sns u-mb-40">
+        <p class="c-sns__text">Pikawakaが運営するSNSはこちら</p>
+        <div class="c-sns__container">
+          <a href="#" class="c-sns__link">
+            <img class="c-sns__icon" src="../assets/images/X.png" alt="X">
+          </a>
+          <a href="#" class="c-sns__link">
+            <img class="c-sns__icon" src="../assets/images/Instagram_Glyph_Black 1.png" alt="Instagram">
+          </a>
+          <a href="#" class="c-sns__link">
+            <img class="c-sns__icon" src="../assets/images/TikTok_Icon_Black_Square 1.png" alt="TikTok">
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="l-footer__copyright">&copy; 2024 Pikawaka Inc.</p>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>

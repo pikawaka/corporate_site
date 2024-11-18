@@ -1,0 +1,46 @@
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+.p-page-header {
+  height: 240px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  background-size: cover;
+  background-position: center;
+  background-image: url('/assets/images/sample_heroImage.png');
+  @include mq {
+    height: 300px;
+  }
+  
+  &--training {
+    background-image: url('/assets/images/training_heroImage.png');
+  }
+  &--development {
+    background-image: url('/assets/images/development_heroImage.png');
+  }
+  &--nomal {
+    height: 200px;
+    @include mq {
+      height: 200px;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    color: $color-white;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    @include mq {
+      font-size: 3.2rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+}

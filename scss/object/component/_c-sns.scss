@@ -1,0 +1,27 @@
+.c-sns {
+  text-align: center;
+
+  &__text {
+    margin-bottom: 2rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}

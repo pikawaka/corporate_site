@@ -1,0 +1,118 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+.c-card-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include mq {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.c-card {
+  box-shadow: 0px 3px 30px 5px rgba(15, 40, 105, .2);
+  transition: box-shadow 0.3s ease;
+  flex: 1 1 330px;
+  min-width: 330px;
+  display: flex;
+  flex-direction: column;
+  @include mq {
+    max-width: 590px;
+  }
+  
+  &__link {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+ 
+    &:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      opacity: .7;
+    }
+  }
+
+  &__image-container {
+    position: relative;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    @include mq {
+      height: 290px;
+    }
+
+    &--green {
+      background-color: $color-green;
+    }
+
+    &--blue-white {
+      background-color: $color-blue;
+    }
+
+    &--h-290 {
+      height: 290px;
+    }
+  }
+
+  &__image-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 3rem;
+    width: 100%;
+
+    &--main {
+      color: $color-white;
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+    &--sub {
+      color: $color-white;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+  }
+
+  &__content {
+    padding: 2rem 3rem;
+    flex-grow: 1;
+
+    &--link {
+      position: relative;
+      padding-right: 5rem;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 26px;
+        background-image: url('/assets/images/arrow.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+  }
+
+  &__description {
+    font-size:1.6rem;
+    line-height: 1.8;
+    color: #252C41;
+  }
+}

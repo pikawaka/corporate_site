@@ -1,0 +1,9 @@
+@use "../../foundation/mixin" as *;
+.c-section {
+  padding: 0 2rem;
+
+  &--mw-1000 {
+    max-width: 1000px;
+    margin: auto;
+  }
+}

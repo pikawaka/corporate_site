@@ -1,0 +1,193 @@
+
+@use '../../foundation/variable' as *;
+@use "../../foundation/mixin" as *;
+
+.p-index-section {
+  padding: 4rem 2rem;
+  @include mq {
+    padding: 8rem 2rem;
+  }
+
+  &:nth-child(odd) {
+    background-color: $color-light-gray;
+  }
+
+  &__title-container {
+    position: relative;
+    height: 8rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mq {
+      height: 14rem;
+    }
+  }
+
+  &__pretext {
+    display: block;
+    font-size: 8rem;
+    font-family: "Roboto Mono", monospace;
+    color: #F1F3F9;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
+
+    &--training {
+      font-size: 6rem;
+      color: $color-white;
+    }
+    &--development{
+      font-size: 5rem;
+    }      
+    &--for-commerce {
+      font-size: 4.6rem;
+      color: $color-white;
+    }
+    &--contact {
+      top: 60%;
+      color: $color-white;
+    }
+
+    @include mq {
+      font-size: 10rem;
+    }
+    @include mq('lg') {
+      font-size: 14rem;
+    }
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    
+    &--message {
+      font-size: 3.2rem;
+    }
+
+    @include mq {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    line-height: 1.8;
+  }
+}
+
+/*--------------------------------------*
+* hero
+*--------------------------------------*/
+.p-index-hero {
+  background-image: url('/assets/images/heroImage01--SP.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include mq {
+    background-image: url('/assets/images/heroImage01--PC.png');
+  }
+
+  &--index2 {
+    background-image: url('/assets/images/heroImage02--SP.png');
+    @include mq {
+      background-image: url('/assets/images/heroImage02--PC.png');
+    }
+
+    .p-index-hero__text {
+      color: $color-white;
+    }
+  }
+  
+  &__inner {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4.5rem 2rem 2.8rem;
+    @include mq {
+      padding: 8rem .5rem 6rem;
+    }
+  }
+  
+  &__title {
+    margin-bottom: .7rem;
+    padding: 0 1rem;
+    img {
+      max-width: 520px;
+    }
+    @include mq {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    @include mq {
+      font-size: 1.6rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+/*--------------------------------------*
+* message
+*--------------------------------------*/
+.p-index-message {
+  font-family: 'YuMincho', sans-serif;
+  &__text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+
+    p {
+      line-height: 1.8;
+      @include mq {
+        font-size: 1.8rem;
+        line-height: 2;
+      }
+    }
+  }
+}
+
+
+/*--------------------------------------*
+* company
+*--------------------------------------*/
+.p-index-company {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 960px;
+    margin: auto;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E8EAEF;
+    padding: 1.6rem 0;
+  }
+
+  &__label {
+    flex: 0 0 30%; 
+    font-weight: bold;
+  }
+
+  &__content {
+    flex-grow: 1;
+    line-height: 1.5;
+  }
+}
+

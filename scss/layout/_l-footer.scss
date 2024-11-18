@@ -1,0 +1,60 @@
+@use "../foundation/variable" as *;
+@use "../foundation/mixin" as *;
+.l-footer {
+  padding-top: 80px;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__nav {
+    position: relative;
+    margin: 0 auto 80px;
+
+    &::after {
+      content: ""; 
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      width: 100px;
+      height: 1px;
+      background-color: #DADDE0;
+      transform: translateX(-50%);
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      gap: 24px;
+      
+    }
+
+    &-link { 
+      color: #797F8C;
+      font-size:1.4rem;
+      &:hover {
+        color: #3359B8;
+      }
+    }
+  }
+
+  &__copyright {
+    width: 100%;
+    color: $color-white;
+    background-color: $color-navy;
+    font-size: 1.2rem;
+    padding: 14px 0;
+    text-align: center;
+  }
+
+  @include mq {
+    &__nav {
+      &-list {
+        flex-direction: row;
+      }
+    }
+  }
+}

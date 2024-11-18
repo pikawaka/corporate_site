@@ -1,0 +1,25 @@
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+.c-menu-button {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+
+  &__line {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: $color-navy;
+    border-radius: 4px;
+
+    &:first-child {
+      margin-bottom: 12px;
+    }
+  }
+
+  @include mq {
+    display: none;
+  }
+}

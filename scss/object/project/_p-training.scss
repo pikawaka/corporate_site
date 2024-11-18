@@ -1,0 +1,58 @@
+@use "../../foundation/mixin" as *;
+.p-training {
+  &__title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    @include mq {
+      gap: 8rem;
+    }
+  }
+  .p-training-item {
+    display: flex;
+    flex-direction: column;
+    @include mq {
+      flex-direction: row;
+      align-items: center;
+      gap: 3.6rem;
+    }
+
+    &__image {
+      width: 100%;
+      max-width: 280px;
+      margin: 0 auto 2.4rem;
+      box-shadow: 0px 10px 10px 0px rgba(15, 40, 105, 0.15);
+      border-radius: 10px;
+      @include mq {
+        margin: 0;
+      }
+    }
+
+    &__title {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 2.8rem;
+      @include mq {
+        text-align: left;
+      }
+    }
+
+    &__descriptions {
+      margin-bottom: 2.4rem;
+      @include mq {
+        flex: 1;
+      }
+    }
+
+    &__description {
+      margin-bottom: 2.4rem;
+      line-height: 1.5;
+    }
+  }
+}

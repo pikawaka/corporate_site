@@ -1,0 +1,47 @@
+@use "../../foundation/mixin" as *;
+
+.u-mb-20 {
+  margin-bottom: 2rem;
+}
+
+.u-mb-40 {
+  margin-bottom: 4rem;
+}
+
+.u-mb-80 {
+  margin-bottom: 8rem;
+}
+
+.u-mb-40-md{
+  @include mq {
+    margin-bottom: 4rem;
+  }
+}
+
+.u-mb-80-md{
+  @include mq {
+    margin-bottom: 8rem;
+  }
+}
+
+.u-mb-120-md{
+  @include mq {
+    margin-bottom: 12rem;
+  }
+}
+
+.u-mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.u-mx-0-md {
+  @include mq {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.u-m-0 {
+  margin: 0;
+}

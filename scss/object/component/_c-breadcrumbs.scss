@@ -1,0 +1,48 @@
+@use "../../foundation/mixin" as *;
+
+.c-breadcrumbs {
+  padding: 2rem;
+  font-size:1rem;
+  max-width: 1000px;
+  @include mq {
+    font-size:1.4rem;
+    padding: 4rem 2rem;
+    margin: auto;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  &__item {
+    position: relative;
+    @include mq {
+      padding-right: 18px;
+    }
+    
+    &:not(:last-child)::after {
+      display: inline-block;
+      transform: rotate(45deg);
+      width: 8px;
+      height: 8px;
+      margin-left: .8rem;
+      border-top: 1px solid #A9B1C3;
+      border-right: 1px solid #A9B1C3;
+      content: "";
+
+      @include mq {
+        margin-left: 1.2rem;
+      }
+    }
+  }
+
+  &__link {
+    &:hover {
+      color: #3359B8;
+    }
+  }
+
+}
