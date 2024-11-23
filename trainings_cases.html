@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>お問い合わせ | 株式会社Pikawaka</title>
+  <title>研修事例一覧 | 株式会社Pikawaka</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -41,76 +41,56 @@
   <main class="l-main">
     <section class="p-page-header p-page-header--nomal">
       <div class="p-page-header__inner">
-        <h1 class="p-page-header__title u-m-0">お問い合わせ</h1>
+        <h1 class="p-page-header__title u-m-0">研修事例一覧</h1>
       </div>
     </section>
-    <nav class="c-breadcrumbs u-mb-20 u-mb-40-md">
+    <nav class="c-breadcrumbs">
       <ul class="c-breadcrumbs__list">
         <li class="c-breadcrumbs__item"><a href="/" class="c-breadcrumbs__link">TOP</a></li>
-        <li class="c-breadcrumbs__item">お問い合わせ</a></li>
+        <li class="c-breadcrumbs__item">研修事例一覧</a></li>
       </ul>
     </nav>
-
-    <!-- contact -->
-    <section class="p-contact c-section c-section--mw-1000 u-mb-40-md">
-      <form class="c-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeV0mMwCu77LKo18VwtWAAVBkBFhG7mKfyuxU-wkWZmy2U1PA/formResponse" method="POST">
-        <div class="c-form__group">
-          <label class="c-form__label" for="company-name">会社・団体名<span class="c-form__required">*必須</span></label>
-          <input type="text" id="company-name" name="entry.432360291" required class="c-form__field c-form__input">
-        </div>
-
-        <div class="c-form__group">
-          <label class="c-form__label" for="department">部署名</label>
-          <input type="text" id="department" name="entry.1457968397" class="c-form__field c-form__input">
-        </div>
-
-        <div class="c-form__group">
-          <label class="c-form__label" for="last-name">姓<span class="c-form__required">*必須</span></label>
-          <input type="text" id="last-name" name="entry.1378627928" required class="c-form__field c-form__input">
-        </div>
-
-        <div class="c-form__group">
-          <label class="c-form__label" for="first-name">名<span class="c-form__required">*必須</span></label>
-          <input type="text" id="first-name" name="entry.1308123087" required class="c-form__field c-form__input">
-        </div>
-
-        <div class="c-form__group">
-          <label class="c-form__label" for="email">
-            メールアドレス
-            <span class="c-form__required">*必須</span>
-            <small class="c-form__help">会社でお使いのメールアドレスをご記入ください。</small>
-          </label>
-          <input type="email" id="email" name="entry.182397840" required class="c-form__field c-form__input">
-        </div>
-
-        <div class="c-form__group">
-          <label class="c-form__label" for="phone">電話番号</label>
-          <input type="tel" id="phone" name="entry.364726396" class="c-form__field c-form__input">
-        </div>
-
-        <div class="c-form__group">
-          <label class="c-form__label" for="category">お問い合わせ内容のカテゴリ<span class="c-form__required">*必須</span></label>
-          <div class="c-form__select-container">
-            <select id="category" name="entry.70098492" required class="c-form__field c-form__select">>
-              <option value="" disabled selected>選択してください</option>
-              <option value="法人研修">法人研修</option>
-              <option value="Webサイト制作">Webサイト制作</option>
-              <option value="Webアプリケーション開発">Webアプリケーション開発</option>
-              <option value="その他">その他</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="c-form__group u-mb-40">
-          <label class="c-form__label" for="message">ご相談内容<span class="c-form__required">*必須</span></label>
-          <textarea id="message" name="entry.158754601" required class="c-form__field c-form__textarea"></textarea>
-        </div>
-
-        <div class="c-form__group">
-          <button type="submit" class="c-button c-button--navy-white u-mx-auto">お問い合わせを送信する</button>
-        </div>
-      </form>
+    
+    <!-- cases -->
+    <section class="p-cases c-section c-section--mw-1000 u-mb-80 u-mb-120-md">
+      <div class="c-card-container">
+        <article class="c-card">
+          <a href="trainings/cases/1" class="c-card__link">
+            <div class="c-card__image-container c-card__image-container--h-290">
+              <img src="./assets/images/training_case1.jpeg" alt="ハンズオンでのワーク形式で学ぶ生成AIセミナーを実施" class="c-card__image">
+            </div>
+            <div class="c-card__content">
+              <h3 class="c-card__title">ハンズオンでのワーク形式で学ぶ生成AIセミナーを実施</h3>
+              <p class="c-card__description">専門学校お茶の水スクール・オブ・ビジネス 様</p>
+            </div>
+          </a>
+        </article>
+        <article class="c-card">
+          <a href="trainings/cases/2" class="c-card__link">
+            <div class="c-card__image-container p-cases__image-container">
+              <img src="./assets/images/training_case2.jpg " alt="GitHub Copilot" class="c-card__image">
+            </div>
+            <div class="c-card__content">
+              <h3 class="c-card__title">GitHub Copilotによる効率的なシステム開発とその応用セミナーを実施</h3>
+              <p class="c-card__description">日本テクノセンター様</p>
+            </div>
+          </a>
+        </article>
+      </div>
     </section>
+
+    <!-- cta -->
+    <section class="c-cta c-cta--blue">
+      <div class="c-cta__inner">
+        <p class="c-cta__text">
+          組織の課題に合わせた育成研修を提供いたします。
+          <br>
+          まずは一度お気軽にご相談ください。
+        </p>
+        <a href="contact" class="c-button c-button--white-navy u-mx-auto">Pikawakaへのお問い合わせはこちら</a>
+      </div>
+    </section>
+  </main>
 
   <!-- footer -->
   <footer class="l-footer">
