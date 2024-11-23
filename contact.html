@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>お問い合わせ | 株式会社Pikawaka</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script type="text/javascript">
+    let submitted = false;
+  </script>
+  <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none"
+      onload="if(submitted){window.location='contact-thanks';}"
+  ></iframe>
 </head>
 <body>
   <!-- l-header -->
@@ -53,7 +62,7 @@
 
     <!-- contact -->
     <section class="p-contact c-section c-section--mw-1000 u-mb-40-md">
-      <form class="c-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeV0mMwCu77LKo18VwtWAAVBkBFhG7mKfyuxU-wkWZmy2U1PA/formResponse" method="POST">
+      <form class="c-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeV0mMwCu77LKo18VwtWAAVBkBFhG7mKfyuxU-wkWZmy2U1PA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
         <div class="c-form__group">
           <label class="c-form__label" for="company-name">会社・団体名<span class="c-form__required">*必須</span></label>
           <input type="text" id="company-name" name="entry.432360291" required class="c-form__field c-form__input">
