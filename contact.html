@@ -5,12 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>お問い合わせ | 株式会社Pikawaka</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script type="text/javascript">
+    let submitted = false;
+  </script>
+  <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none"
+      onload="if(submitted){window.location='contact-thanks';}"
+  ></iframe>
 </head>
 <body>
   <!-- l-header -->
   <header class="l-header">
     <div class="l-header__inner">
-      <a class="c-logo c-logo--header" href="index.html">
+      <a class="c-logo c-logo--header" href="/">
         <img src="./assets/images/logo.png" alt="株式会社Pikawaka">
       </a>
       <button class="c-menu-button js-menu-toggle" aria-label="メニュー開閉">
@@ -21,19 +30,19 @@
       <nav class="c-nav">
         <ul class="c-nav__list">
           <li class="c-nav__item">
-            <a href="training.html" class="c-nav__link">法人向け研修事業</a>
+            <a href="trainings" class="c-nav__link">法人向け研修事業</a>
           </li>
           <li class="c-nav__item">
-            <a href="development.html" class="c-nav__link">Webアプリ開発・UI/UXデザイン</a>
+            <a href="developments" class="c-nav__link">Webアプリ開発・UI/UXデザイン</a>
           </li>
           <li class="c-nav__item">
             <a href="https://pikawaka.com/" target=”_blank” class="c-nav__link">オウンドメディア</a>
           </li>
           <li class="c-nav__item">
-            <a href="index.html#company" class="c-nav__link">会社情報</a>
+            <a href="index#company" class="c-nav__link">会社情報</a>
           </li>
         </ul>
-        <a href="contact.html" class="c-button c-button--blue-white c-nav__button">お問い合わせ</a>
+        <a href="contact" class="c-button c-button--blue-white c-nav__button">お問い合わせ</a>
       </nav>
     </div>
   </header>
@@ -46,14 +55,14 @@
     </section>
     <nav class="c-breadcrumbs u-mb-20 u-mb-40-md">
       <ul class="c-breadcrumbs__list">
-        <li class="c-breadcrumbs__item"><a href="index.html" class="c-breadcrumbs__link">TOP</a></li>
+        <li class="c-breadcrumbs__item"><a href="/" class="c-breadcrumbs__link">TOP</a></li>
         <li class="c-breadcrumbs__item">お問い合わせ</a></li>
       </ul>
     </nav>
 
     <!-- contact -->
     <section class="p-contact c-section c-section--mw-1000 u-mb-40-md">
-      <form class="c-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeV0mMwCu77LKo18VwtWAAVBkBFhG7mKfyuxU-wkWZmy2U1PA/formResponse" method="POST">
+      <form class="c-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeV0mMwCu77LKo18VwtWAAVBkBFhG7mKfyuxU-wkWZmy2U1PA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
         <div class="c-form__group">
           <label class="c-form__label" for="company-name">会社・団体名<span class="c-form__required">*必須</span></label>
           <input type="text" id="company-name" name="entry.432360291" required class="c-form__field c-form__input">
@@ -115,30 +124,30 @@
   <!-- footer -->
   <footer class="l-footer">
     <div class="l-footer__inner">
-      <a class="c-logo c-logo--footer" href="index.html">
+      <a class="c-logo c-logo--footer" href="/">
         <img src="./assets/images/logo.png" alt="株式会社Pikawaka">
       </a>
       <nav class="l-footer__nav">
         <ul class="l-footer__nav-list">
-          <li class="l-footer__nav-item"><a href="training.html" class="l-footer__nav-link">法人向け研修事業</a></li>
-          <li class="l-footer__nav-item"><a href="development.html" class="l-footer__nav-link">Webアプリ開発・UI/UXデザイン</a></li>
+          <li class="l-footer__nav-item"><a href="trainings" class="l-footer__nav-link">法人向け研修事業</a></li>
+          <li class="l-footer__nav-item"><a href="developments" class="l-footer__nav-link">Webアプリ開発・UI/UXデザイン</a></li>
           <li class="l-footer__nav-item"><a href="https://pikawaka.com" target="_blank" class="l-footer__nav-link">オウンドメディア</a></li>
-          <li class="l-footer__nav-item"><a href="index.html#company" class="l-footer__nav-link">会社情報</a></li>
-          <li class="l-footer__nav-item"><a href="contact.html" class="l-footer__nav-link">お問い合わせ</a></li>
+          <li class="l-footer__nav-item"><a href="index#company" class="l-footer__nav-link">会社情報</a></li>
+          <li class="l-footer__nav-item"><a href="contact" class="l-footer__nav-link">お問い合わせ</a></li>
         </ul>
       </nav>
       <div class="c-sns u-mb-40">
         <p class="c-sns__text">Pikawakaが運営するSNSはこちら</p>
         <div class="c-sns__container">
-          <a href="#" class="c-sns__link">
+          <a href="https://x.com/pikkaPikawaka" class="c-sns__link" target="_blank" rel="noreferrer noopener">
             <img class="c-sns__icon" src="./assets/images/X.png" alt="X">
           </a>
-          <a href="#" class="c-sns__link">
+          <!-- <a href="#" class="c-sns__link">
             <img class="c-sns__icon" src="./assets/images/Instagram_Glyph_Black 1.png" alt="Instagram">
           </a>
           <a href="#" class="c-sns__link">
             <img class="c-sns__icon" src="./assets/images/TikTok_Icon_Black_Square 1.png" alt="TikTok">
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
