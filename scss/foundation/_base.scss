@@ -25,6 +25,7 @@ main {
 a {
   text-decoration: none;
   color:inherit;
+  transition: 0.7s linear;
   
   &:hover {
     transition: 0.2s;

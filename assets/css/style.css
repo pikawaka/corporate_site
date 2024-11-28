@@ -98,6 +98,7 @@ main {
 a {
   text-decoration: none;
   color: inherit;
+  transition: 0.7s linear;
 }
 a:hover {
   transition: 0.2s;
@@ -155,6 +156,7 @@ img {
 .l-footer__nav-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: -moz-fit-content;
   width: fit-content;
   gap: 24px;
@@ -206,32 +208,21 @@ img {
   line-height: 1.8;
   margin-bottom: 3rem;
 }
-
+.c-article__content a {
+  color: #476fd3;
+  text-decoration: underline;
+}
 .c-article__content h2 {
   margin-bottom: 1rem;
 }
-
 .c-article__content figure {
   text-align: center;
   margin: 2rem 0;
 }
-
 .c-article__content figcaption {
   margin-top: 0.5rem;
   font-size: 12px;
-  color: #666;
-}
-
-.c-article__content img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.c-article__content a {
-  color: #476fd3;
-  text-decoration: underline;
+  color: #81858d;
 }
 
 .c-breadcrumbs {
@@ -290,6 +281,7 @@ img {
   align-items: center;
   justify-content: center;
   width: 100%;
+  transition: 0.7s linear;
 }
 .c-button:hover {
   transition: 0.2s;
@@ -315,6 +307,16 @@ img {
 .c-button--white-navy:hover {
   background-color: #DFEDF6;
 }
+.c-button--white-navyLine {
+  background-color: #fff;
+  color: #0F2149;
+  outline: 2px solid;
+  outline-offset: -2px;
+  border-color: #0F2149;
+}
+.c-button--white-navyLine:hover {
+  opacity: 0.5;
+}
 .c-button--white-green {
   background-color: #fff;
   color: #147356;
@@ -332,6 +334,16 @@ img {
   }
   .c-button--small {
     font-size: 1.6rem;
+  }
+}
+.c-button__training-link {
+  padding: 1.6rem 5.2rem;
+  font-size: 1.7rem;
+}
+@media screen and (min-width: 768px) {
+  .c-button__training-link {
+    padding: 2.6rem 7.2rem;
+    font-size: 2rem;
   }
 }
 
@@ -429,7 +441,7 @@ img {
   transform: translateY(-50%);
   width: 14px;
   height: 26px;
-  background-image: url("../images/arrow.png");
+  background-image: url("../../assets/images/arrow.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -460,10 +472,10 @@ img {
   }
 }
 .c-cta--green {
-  background-image: url("../images/contact_cta_green.png");
+  background-image: url("../../assets/images/contact_cta_green.png");
 }
 .c-cta--blue {
-  background-image: url("../images/contact_cta_blue.png");
+  background-image: url("../../assets/images/contact_cta_blue.png");
 }
 .c-cta__inner {
   position: relative;
@@ -722,6 +734,19 @@ img {
   }
 }
 
+.c-links {
+  display: flex;
+  justify-content: center;
+}
+.c-links__link-lists {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+
 .p-contact-thanks {
   text-align: center;
   line-height: 1.8;
@@ -730,6 +755,9 @@ img {
   font-size: 2rem;
 }
 
+.p-development {
+  /* 研修事例一覧へのリンクスタイル */
+}
 .p-development__description {
   text-align: center;
   line-height: 1.8;
@@ -746,7 +774,7 @@ img {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  background-image: url("../images/sample_heroImage.png");
+  background-image: url("../../assets/images/sample_heroImage.png");
   background-size: cover;
   background-position: center;
   margin: 0 auto 40px;
@@ -762,6 +790,9 @@ img {
 }
 .p-development__link:hover {
   opacity: 0.8;
+}
+.p-development__training-lists-link {
+  background-image: url("../../assets/images/training-sample_link.png");
 }
 .p-development .p-development__items {
   display: flex;
@@ -1013,29 +1044,29 @@ img {
 * hero
 *--------------------------------------*/
 .p-index-hero {
-  background-image: url("../images/heroImage01--SP.png");
+  background-image: url("../../assets/images/heroImage01--SP.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) {
   .p-index-hero {
-    background-image: url("../images/heroImage01--PC.png");
+    background-image: url("../../assets/images/heroImage01--PC.png");
   }
 }
 .p-index-hero--index2 {
-  background-image: url("../images/heroImage02--SP.png");
+  background-image: url("../../assets/images/heroImage02--SP.png");
 }
 @media screen and (min-width: 768px) {
   .p-index-hero--index2 {
-    background-image: url("../images/heroImage02--PC.png");
+    background-image: url("../../assets/images/heroImage02--PC.png");
   }
 }
 .p-index-hero--index2 .p-index-hero__text {
   color: #fff;
 }
 .p-index-hero__inner {
-  max-width: 802px;
+  max-width: 800px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -1128,7 +1159,7 @@ img {
   padding: 2rem 1rem;
   background-size: cover;
   background-position: center;
-  background-image: url("../images/sample_heroImage.png");
+  background-image: url("../../assets/images/sample_heroImage.png");
 }
 @media screen and (min-width: 768px) {
   .p-page-header {
@@ -1136,10 +1167,13 @@ img {
   }
 }
 .p-page-header--training {
-  background-image: url("../images/training_heroImage.png");
+  background-image: url("../../assets/images/training_heroImage.png");
+}
+.p-page-header--training-lists {
+  background-image: url("../../assets/images/training-lists_heroImage.png");
 }
 .p-page-header--development {
-  background-image: url("../images/development_heroImage.png");
+  background-image: url("../../assets/images/development_heroImage.png");
 }
 .p-page-header--nomal {
   height: 200px;

@@ -1,0 +1,15 @@
+@use "../../foundation/variable" as *;
+@use "../../foundation/mixin" as *;
+
+.c-links {
+    display: flex;
+    justify-content: center;
+
+    &__link-lists {
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+        width: fit-content;
+        flex-wrap: wrap;
+    }
+}
