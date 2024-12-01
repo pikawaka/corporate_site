@@ -10,16 +10,19 @@
   padding: 2rem 1rem;
   background-size: cover;
   background-position: center;
-  background-image: url('/assets/images/sample_heroImage.png');
+  background-image: url('../../assets/images/sample_heroImage.png');
   @include mq {
     height: 300px;
   }
   
   &--training {
-    background-image: url('/assets/images/training_heroImage.png');
+    background-image: url('../../assets/images/training_heroImage.png');
+  }
+  &--training-lists {
+    background-image: url('../../assets/images/training-lists_heroImage.png');
   }
   &--development {
-    background-image: url('/assets/images/development_heroImage.png');
+    background-image: url('../../assets/images/development_heroImage.png');
   }
   &--nomal {
     height: 200px;

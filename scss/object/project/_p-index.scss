@@ -86,18 +86,18 @@
 * hero
 *--------------------------------------*/
 .p-index-hero {
-  background-image: url('/assets/images/heroImage01--SP.png');
+  background-image: url('../../assets/images/heroImage01--SP.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   @include mq {
-    background-image: url('/assets/images/heroImage01--PC.png');
+    background-image: url('../../assets/images/heroImage01--PC.png');
   }
 
   &--index2 {
-    background-image: url('/assets/images/heroImage02--SP.png');
+    background-image: url('../../assets/images/heroImage02--SP.png');
     @include mq {
-      background-image: url('/assets/images/heroImage02--PC.png');
+      background-image: url('../../assets/images/heroImage02--PC.png');
     }
 
     .p-index-hero__text {

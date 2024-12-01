@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  transition: 0.7s linear;
   &:hover {
     transition: 0.2s;
   }
@@ -43,6 +44,19 @@
     }
   }
 
+  //白背景・ネイビーの文字・ネイビーの囲み線
+  &--white-navyLine {
+    background-color: $color-white;
+    color: $color-navy;
+    outline: 2px solid;
+    outline-offset: -2px;
+    border-color: $color-navy;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
   &--white-green {
     background-color: $color-white;
     color: $color-green;
@@ -63,5 +77,16 @@
       font-size: 1.6rem;
     }
   
+  }
+
+  //トップページの「法人研修詳細ページはこちら」「研修事例一覧ページはこちら」ボタンのスタイル
+  &__training-link {
+    padding: 1.6rem 5.2rem;
+    font-size: 1.7rem;
+
+    @include mq {
+      padding: 2.6rem 7.2rem;
+      font-size: 2rem;
+    }
   }
 }
