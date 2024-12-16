@@ -213,7 +213,11 @@ img {
   text-decoration: underline;
 }
 .c-article__content h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+.c-article__content h3 {
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
 }
 .c-article__content figure {
   text-align: center;
