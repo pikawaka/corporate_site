@@ -349,8 +349,8 @@ img {
 
 .c-card-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: space-between;
   gap: 2rem;
 }
 @media screen and (min-width: 768px) {
@@ -370,7 +370,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .c-card {
-    max-width: 590px;
+    max-width: calc(50% - 1.2rem);
   }
 }
 .c-card__link {
