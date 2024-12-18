@@ -452,8 +452,9 @@ img {
 }
 .c-card__description {
   font-size: 1.6rem;
-  line-height: 1.8;
-  color: #252C41;
+  line-height: 1.5;
+  color: #4a5062;
+  margin-bottom: 1.3rem;
 }
 
 .c-cta {
@@ -736,6 +737,12 @@ img {
   .c-tag--small {
     padding: 0.8rem 1.6rem;
     font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .c-tag--ceses-style {
+    font-size: 1.3rem;
+    padding: 0.5rem 1.2rem;
   }
 }
 
@@ -1202,6 +1209,10 @@ img {
     font-size: 3.2rem;
     margin-bottom: 4rem;
   }
+}
+
+.u-mb-10 {
+  margin-bottom: 1rem;
 }
 
 .u-mb-20 {

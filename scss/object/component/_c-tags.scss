@@ -31,4 +31,11 @@
       font-size: 1.6rem;
     }
   }
+  //事例一覧ページのタグのスタイル
+  &--ceses-style {
+    @include mq {
+      font-size: 1.3rem;
+      padding: 0.5rem 1.2rem;
+    }
+  }
 }
