@@ -2,8 +2,8 @@
 @use "../../foundation/variable" as *;
 .c-card-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: space-between;
   gap: 2rem;
 
   @include mq {
@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   @include mq {
-    max-width: 590px;
+    max-width: calc(50% - 1.2rem);
   }
   
   &__link {
@@ -112,7 +112,8 @@
 
   &__description {
     font-size:1.6rem;
-    line-height: 1.8;
-    color: #252C41;
+    line-height: 1.5;
+    color: #4a5062;
+    margin-bottom: 1.3rem;
   }
 }
