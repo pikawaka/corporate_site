@@ -7,6 +7,9 @@
   gap: .8rem;
   width: fit-content;
   flex-wrap: wrap;
+
+  &__container {
+  }
 }
 
 .c-tag {
@@ -29,6 +32,13 @@
     @include mq {
       padding: .8rem 1.6rem;
       font-size: 1.6rem;
+    }
+  }
+  //事例一覧ページのタグのスタイル
+  &--ceses-style {
+    @include mq {
+      font-size: 1.3rem;
+      padding: 0.5rem 1.2rem;
     }
   }
 }
