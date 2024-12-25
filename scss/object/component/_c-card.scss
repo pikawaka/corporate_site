@@ -112,11 +112,24 @@
       }
     }
   }
+  // 事例一覧ページのcontent
+  &__cases-content {
+    padding: 2.5rem 1.5rem;
+    flex-grow: 1;
+  }
 
   &__title {
     font-size: 2rem;
     margin-bottom: 1rem;
     line-height: 1.8;
+  }
+  //事例一覧ページのタイトル
+  &__cases-title {
+    font-family: "YuMincho", sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    color: #2f3033;
   }
 
   &__description {
@@ -124,5 +137,12 @@
     line-height: 1.5;
     color: #4a5062;
     margin-bottom: 1.3rem;
+  }
+  //事例一覧ページのディスクリプション
+  &__cases-description {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #2f3033;
+    margin-bottom: 2.5rem;
   }
 }

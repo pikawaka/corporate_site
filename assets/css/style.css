@@ -197,6 +197,8 @@ img {
   border: 1px solid #f1f3f9;
 }
 .c-article__title {
+  font-family: "YuMincho", sans-serif;
+  color: #2f3033;
   font-size: 2.4rem;
   line-height: 1.5;
   margin-bottom: 1.6rem;
@@ -267,7 +269,7 @@ img {
 .c-breadcrumbs {
   padding: 2rem;
   font-size: 1rem;
-  max-width: 1000px;
+  max-width: 1060px;
 }
 @media screen and (min-width: 768px) {
   .c-breadcrumbs {
@@ -490,16 +492,33 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.c-card__cases-content {
+  padding: 2.5rem 1.5rem;
+  flex-grow: 1;
+}
 .c-card__title {
   font-size: 2rem;
   margin-bottom: 1rem;
   line-height: 1.8;
+}
+.c-card__cases-title {
+  font-family: "YuMincho", sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  color: #2f3033;
 }
 .c-card__description {
   font-size: 1.6rem;
   line-height: 1.5;
   color: #4a5062;
   margin-bottom: 1.3rem;
+}
+.c-card__cases-description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #2f3033;
+  margin-bottom: 2.5rem;
 }
 
 .c-cta {
@@ -544,6 +563,11 @@ img {
   display: flex;
   flex-direction: column;
   margin-bottom: 2.4rem;
+}
+@media screen and (min-width: 768px) {
+  .c-form__group--width-half {
+    width: 50%;
+  }
 }
 .c-form__label {
   display: flex;
@@ -590,6 +614,15 @@ img {
   border-top: 6px solid #797F8C;
   border-bottom: 0;
 }
+@media screen and (min-width: 768px) {
+  .c-form__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2.5rem;
+    align-items: flex-end;
+  }
+}
 
 /* iPhone、iPdad時にセレクトボックスの背景色が変わるのを防ぐ */
 .custom-select {
@@ -615,8 +648,8 @@ img {
 .c-section {
   padding: 0 2rem;
 }
-.c-section--mw-1000 {
-  max-width: 1000px;
+.c-section--mw-1060 {
+  max-width: 1060px;
   margin: auto;
 }
 
@@ -761,6 +794,7 @@ img {
   width: fit-content;
   flex-wrap: wrap;
 }
+
 .c-tag {
   padding: 0.8rem 1.6rem;
   border-radius: 2px;
@@ -772,6 +806,10 @@ img {
 .c-tag--blue {
   background-color: #DFEDF6;
   color: #17487C;
+}
+.c-tag--grey {
+  background-color: #f1f4f6;
+  color: #848b92;
 }
 .c-tag--small {
   padding: 0.8rem 1rem;
