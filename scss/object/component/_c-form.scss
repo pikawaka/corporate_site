@@ -1,8 +1,24 @@
+@use "../../foundation/mixin" as *;
+@use "../../foundation/variable" as *;
+
 .c-form {
   &__group {
     display: flex;
     flex-direction: column;
     margin-bottom: 2.4rem;
+
+    // お問い合わせフォームで１行に２つボックスが入るときのスタイル
+    &--width-half {
+      @include mq {
+        width: 50%;
+      }
+    }
+  }
+
+  // プレースホルダーのスタイル
+  input::placeholder, textarea::placeholder {
+    font-size: 1.5rem;
+    color: #A9B1C3;
   }
 
   &__label  {
@@ -57,8 +73,18 @@
       border-bottom: 0;
     }
   }
-}
 
+  // お問い合わせで１行にフォームボックスが２つ入る場合のスタイル
+  &__wrapper {
+    @include mq {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2.5rem;
+      align-items: flex-end;
+    }
+  }
+}
 
 /* iPhone、iPdad時にセレクトボックスの背景色が変わるのを防ぐ */
 .custom-select {
