@@ -28,7 +28,8 @@ ul, li, ol {
 }
 
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 img {
@@ -106,7 +107,8 @@ a:hover {
 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*--------------------------------------*
@@ -155,6 +157,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: -moz-fit-content;
   width: fit-content;
   gap: 24px;
 }
@@ -365,6 +368,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .c-button {
+    width: -moz-fit-content;
     width: fit-content;
   }
   .c-button--small {
@@ -385,7 +389,7 @@ img {
 .c-card-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   gap: 2rem;
 }
 @media screen and (min-width: 768px) {
@@ -396,8 +400,7 @@ img {
 }
 
 .c-card {
-  box-shadow: 0px 3px 30px 5px rgba(15, 40, 105, 0.2);
-  transition: box-shadow 0.3s ease;
+  background-color: #FFF;
   flex: 1 1 330px;
   min-width: 330px;
   display: flex;
@@ -408,6 +411,14 @@ img {
     max-width: calc(50% - 1.2rem);
   }
 }
+@media screen and (min-width: 768px) {
+  .c-card__top-page-card {
+    max-width: 590px;
+  }
+}
+.c-card__top-page-card__white-bg {
+  border: solid #e8eaf0 1px;
+}
 .c-card__link {
   height: 100%;
   width: 100%;
@@ -415,7 +426,6 @@ img {
   flex-direction: column;
 }
 .c-card__link:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   opacity: 0.7;
 }
 .c-card__image-container {
@@ -561,7 +571,8 @@ img {
 .c-form__select {
   width: 100%;
   -webkit-appearance: none;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 .c-form__select:invalid {
   color: #A9B1C3;
@@ -703,6 +714,7 @@ img {
 @media screen and (min-width: 768px) {
   .c-nav__button {
     margin-top: 0;
+    width: -moz-fit-content;
     width: fit-content;
   }
 }
@@ -745,6 +757,7 @@ img {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  width: -moz-fit-content;
   width: fit-content;
   flex-wrap: wrap;
 }
@@ -785,6 +798,7 @@ img {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  width: -moz-fit-content;
   width: fit-content;
   flex-wrap: wrap;
 }
