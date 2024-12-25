@@ -3,7 +3,7 @@
 .c-card-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   gap: 2rem;
 
   @include mq {
@@ -13,8 +13,7 @@
 }
 
 .c-card {
-  box-shadow: 0px 3px 30px 5px rgba(15, 40, 105, .2);
-  transition: box-shadow 0.3s ease;
+  background-color: #FFF;
   flex: 1 1 330px;
   min-width: 330px;
   display: flex;
@@ -22,6 +21,17 @@
   @include mq {
     max-width: calc(50% - 1.2rem);
   }
+
+  //トップページのカードスタイル
+  &__top-page-card {
+    @include mq {
+      max-width: 590px;
+    }
+    &__white-bg {
+      border: solid #e8eaf0 1px;
+    }
+  }
+  //トップページのカードスタイル終わり
   
   &__link {
     height: 100%;
@@ -30,7 +40,6 @@
     flex-direction: column;
  
     &:hover {
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
       opacity: .7;
     }
   }
@@ -103,11 +112,24 @@
       }
     }
   }
+  // 事例一覧ページのcontent
+  &__cases-content {
+    padding: 2.5rem 1.5rem;
+    flex-grow: 1;
+  }
 
   &__title {
     font-size: 2rem;
     margin-bottom: 1rem;
     line-height: 1.8;
+  }
+  //事例一覧ページのタイトル
+  &__cases-title {
+    font-family: "YuMincho", sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    color: #2f3033;
   }
 
   &__description {
@@ -115,5 +137,12 @@
     line-height: 1.5;
     color: #4a5062;
     margin-bottom: 1.3rem;
+  }
+  //事例一覧ページのディスクリプション
+  &__cases-description {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #2f3033;
+    margin-bottom: 2.5rem;
   }
 }

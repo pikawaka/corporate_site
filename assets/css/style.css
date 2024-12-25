@@ -28,7 +28,8 @@ ul, li, ol {
 }
 
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
 img {
@@ -106,7 +107,8 @@ a:hover {
 img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*--------------------------------------*
@@ -155,6 +157,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: -moz-fit-content;
   width: fit-content;
   gap: 24px;
 }
@@ -194,6 +197,8 @@ img {
   border: 1px solid #f1f3f9;
 }
 .c-article__title {
+  font-family: "YuMincho", sans-serif;
+  color: #2f3033;
   font-size: 2.4rem;
   line-height: 1.5;
   margin-bottom: 1.6rem;
@@ -264,7 +269,7 @@ img {
 .c-breadcrumbs {
   padding: 2rem;
   font-size: 1rem;
-  max-width: 1000px;
+  max-width: 1060px;
 }
 @media screen and (min-width: 768px) {
   .c-breadcrumbs {
@@ -365,6 +370,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .c-button {
+    width: -moz-fit-content;
     width: fit-content;
   }
   .c-button--small {
@@ -385,7 +391,7 @@ img {
 .c-card-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   gap: 2rem;
 }
 @media screen and (min-width: 768px) {
@@ -396,8 +402,7 @@ img {
 }
 
 .c-card {
-  box-shadow: 0px 3px 30px 5px rgba(15, 40, 105, 0.2);
-  transition: box-shadow 0.3s ease;
+  background-color: #FFF;
   flex: 1 1 330px;
   min-width: 330px;
   display: flex;
@@ -408,6 +413,14 @@ img {
     max-width: calc(50% - 1.2rem);
   }
 }
+@media screen and (min-width: 768px) {
+  .c-card__top-page-card {
+    max-width: 590px;
+  }
+}
+.c-card__top-page-card__white-bg {
+  border: solid #e8eaf0 1px;
+}
 .c-card__link {
   height: 100%;
   width: 100%;
@@ -415,7 +428,6 @@ img {
   flex-direction: column;
 }
 .c-card__link:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   opacity: 0.7;
 }
 .c-card__image-container {
@@ -480,16 +492,33 @@ img {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.c-card__cases-content {
+  padding: 2.5rem 1.5rem;
+  flex-grow: 1;
+}
 .c-card__title {
   font-size: 2rem;
   margin-bottom: 1rem;
   line-height: 1.8;
+}
+.c-card__cases-title {
+  font-family: "YuMincho", sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  color: #2f3033;
 }
 .c-card__description {
   font-size: 1.6rem;
   line-height: 1.5;
   color: #4a5062;
   margin-bottom: 1.3rem;
+}
+.c-card__cases-description {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #2f3033;
+  margin-bottom: 2.5rem;
 }
 
 .c-cta {
@@ -535,6 +564,19 @@ img {
   flex-direction: column;
   margin-bottom: 2.4rem;
 }
+@media screen and (min-width: 768px) {
+  .c-form__group--width-half {
+    width: 50%;
+  }
+}
+.c-form input::-moz-placeholder, .c-form textarea::-moz-placeholder {
+  font-size: 1.5rem;
+  color: #A9B1C3;
+}
+.c-form input::placeholder, .c-form textarea::placeholder {
+  font-size: 1.5rem;
+  color: #A9B1C3;
+}
 .c-form__label {
   display: flex;
   align-items: center;
@@ -561,7 +603,8 @@ img {
 .c-form__select {
   width: 100%;
   -webkit-appearance: none;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 .c-form__select:invalid {
   color: #A9B1C3;
@@ -578,6 +621,15 @@ img {
   border-left: 6px solid transparent;
   border-top: 6px solid #797F8C;
   border-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .c-form__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2.5rem;
+    align-items: flex-end;
+  }
 }
 
 /* iPhone、iPdad時にセレクトボックスの背景色が変わるのを防ぐ */
@@ -604,8 +656,8 @@ img {
 .c-section {
   padding: 0 2rem;
 }
-.c-section--mw-1000 {
-  max-width: 1000px;
+.c-section--mw-1060 {
+  max-width: 1060px;
   margin: auto;
 }
 
@@ -703,6 +755,7 @@ img {
 @media screen and (min-width: 768px) {
   .c-nav__button {
     margin-top: 0;
+    width: -moz-fit-content;
     width: fit-content;
   }
 }
@@ -745,9 +798,11 @@ img {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  width: -moz-fit-content;
   width: fit-content;
   flex-wrap: wrap;
 }
+
 .c-tag {
   padding: 0.8rem 1.6rem;
   border-radius: 2px;
@@ -759,6 +814,10 @@ img {
 .c-tag--blue {
   background-color: #DFEDF6;
   color: #17487C;
+}
+.c-tag--grey {
+  background-color: #f1f4f6;
+  color: #848b92;
 }
 .c-tag--small {
   padding: 0.8rem 1rem;
@@ -785,6 +844,7 @@ img {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  width: -moz-fit-content;
   width: fit-content;
   flex-wrap: wrap;
 }

@@ -76,40 +76,46 @@
     </nav>
 
     <!-- contact -->
-    <section class="p-contact c-section c-section--mw-1000 u-mb-40-md">
+    <section class="p-contact c-section c-section--mw-1060 u-mb-40-md">
       <form class="c-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeV0mMwCu77LKo18VwtWAAVBkBFhG7mKfyuxU-wkWZmy2U1PA/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-        <div class="c-form__group">
-          <label class="c-form__label" for="company-name">会社・団体名<span class="c-form__required">*必須</span></label>
-          <input type="text" id="company-name" name="entry.432360291" required class="c-form__field c-form__input">
+        <div class="c-form__wrapper">
+          <div class="c-form__group c-form__group--width-half">
+            <label class="c-form__label" for="company-name">会社・団体名<span class="c-form__required">*必須</span></label>
+            <input type="text" id="company-name" name="entry.432360291" required class="c-form__field c-form__input" placeholder="株式会社Pikawaka">
+          </div>
+  
+          <div class="c-form__group c-form__group--width-half">
+            <label class="c-form__label" for="department">部署名</label>
+            <input type="text" id="department" name="entry.1457968397" class="c-form__field c-form__input" placeholder="営業部">
+          </div>
         </div>
 
-        <div class="c-form__group">
-          <label class="c-form__label" for="department">部署名</label>
-          <input type="text" id="department" name="entry.1457968397" class="c-form__field c-form__input">
+        <div class="c-form__wrapper">
+          <div class="c-form__group c-form__group--width-half">
+            <label class="c-form__label" for="last-name">姓<span class="c-form__required">*必須</span></label>
+            <input type="text" id="last-name" name="entry.1378627928" required class="c-form__field c-form__input" placeholder="山田">
+          </div>
+  
+          <div class="c-form__group c-form__group--width-half">
+            <label class="c-form__label" for="first-name">名<span class="c-form__required">*必須</span></label>
+            <input type="text" id="first-name" name="entry.1308123087" required class="c-form__field c-form__input" placeholder="太郎">
+          </div>
         </div>
 
-        <div class="c-form__group">
-          <label class="c-form__label" for="last-name">姓<span class="c-form__required">*必須</span></label>
-          <input type="text" id="last-name" name="entry.1378627928" required class="c-form__field c-form__input">
-        </div>
-
-        <div class="c-form__group">
-          <label class="c-form__label" for="first-name">名<span class="c-form__required">*必須</span></label>
-          <input type="text" id="first-name" name="entry.1308123087" required class="c-form__field c-form__input">
-        </div>
-
-        <div class="c-form__group">
-          <label class="c-form__label" for="email">
-            メールアドレス
-            <span class="c-form__required">*必須</span>
-            <small class="c-form__help">会社でお使いのメールアドレスをご記入ください。</small>
-          </label>
-          <input type="email" id="email" name="entry.182397840" required class="c-form__field c-form__input">
-        </div>
-
-        <div class="c-form__group">
-          <label class="c-form__label" for="phone">電話番号</label>
-          <input type="tel" id="phone" name="entry.364726396" class="c-form__field c-form__input">
+        <div class="c-form__wrapper">
+          <div class="c-form__group c-form__group--width-half">
+            <label class="c-form__label" for="email">
+              メールアドレス
+              <span class="c-form__required">*必須</span>
+              <small class="c-form__help">会社でお使いのメールアドレスをご記入ください。</small>
+            </label>
+            <input type="email" id="email" name="entry.182397840" required class="c-form__field c-form__input" placeholder="example@mail.co.jp">
+          </div>
+  
+          <div class="c-form__group c-form__group--width-half">
+            <label class="c-form__label" for="phone">電話番号</label>
+            <input type="tel" id="phone" name="entry.364726396" class="c-form__field c-form__input" placeholder="00-0000-0000">
+          </div>
         </div>
 
         <div class="c-form__group">
@@ -127,7 +133,7 @@
 
         <div class="c-form__group u-mb-40">
           <label class="c-form__label" for="message">ご相談内容<span class="c-form__required">*必須</span></label>
-          <textarea id="message" name="entry.158754601" required class="c-form__field c-form__textarea"></textarea>
+          <textarea id="message" name="entry.158754601" required class="c-form__field c-form__textarea" placeholder="ご相談内容を入力してください。"></textarea>
         </div>
 
         <div class="c-form__group">

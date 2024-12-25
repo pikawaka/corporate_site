@@ -7,9 +7,6 @@
   gap: .8rem;
   width: fit-content;
   flex-wrap: wrap;
-
-  &__container {
-  }
 }
 
 .c-tag {
@@ -24,6 +21,11 @@
   &--blue {
     background-color: #DFEDF6;
     color: #17487C;
+  }
+
+  &--grey {
+    background-color: #f1f4f6;
+    color: #848b92;
   }
 
   &--small {
