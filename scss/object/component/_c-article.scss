@@ -92,6 +92,16 @@
       margin-top: 1.5rem;
       font-size: 1.5rem;
       color: #8491ac;
+
+      a {
+        color: #8491ac;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          color: #8491ac;
+        }
+      }
     }
   }
 

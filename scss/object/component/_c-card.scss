@@ -6,6 +6,10 @@
   justify-content: center;
   gap: 2rem;
 
+  &.justify-content-left {
+    justify-content: flex-start;
+  }
+
   @include mq {
     flex-direction: row;
     flex-wrap: wrap;
