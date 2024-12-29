@@ -71,8 +71,16 @@
       font-size: 3.2rem;
     }
 
+    &.contact {
+      font-size: 1.6rem;
+    }
+
     @include mq {
       font-size: 3.2rem;
+
+      &.contact {
+        font-size: 2.4rem;
+      }      
     }
   }
 
