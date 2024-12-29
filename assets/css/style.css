@@ -1303,6 +1303,10 @@ img {
   }
 }
 
+.u-mb-0 {
+  margin-bottom: 0;
+}
+
 .u-mb-10 {
   margin-bottom: 1rem;
 }
@@ -1351,6 +1355,14 @@ img {
 
 .u-m-0 {
   margin: 0;
+}
+
+.u-pt-0 {
+  padding-top: 0;
+}
+
+.u-pb-40 {
+  padding-bottom: 4rem;
 }
 
 .u-border--blue-white {
