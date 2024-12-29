@@ -1134,9 +1134,15 @@ img {
 .p-index-section__title--message {
   font-size: 3.2rem;
 }
+.p-index-section__title.contact {
+  font-size: 1.6rem;
+}
 @media screen and (min-width: 768px) {
   .p-index-section__title {
     font-size: 3.2rem;
+  }
+  .p-index-section__title.contact {
+    font-size: 2.4rem;
   }
 }
 .p-index-section__description {
