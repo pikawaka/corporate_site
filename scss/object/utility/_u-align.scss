@@ -1,0 +1,7 @@
+@use "../../foundation/mixin" as *;
+
+.u-align-left-mobile {
+  @include mq('sm', 'max') {
+    text-align: left;
+  }
+}
