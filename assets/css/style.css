@@ -473,14 +473,24 @@ img {
 }
 .c-card__image-title--main {
   color: #fff;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .c-card__image-title--main {
+    font-size: 3.2rem;
+  }
 }
 .c-card__image-title--sub {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  .c-card__image-title--sub {
+    font-size: 1.8rem;
+  }
 }
 .c-card__content {
   padding: 2rem 3rem;
@@ -507,9 +517,14 @@ img {
   flex-grow: 1;
 }
 .c-card__title {
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 1rem;
   line-height: 1.8;
+}
+@media screen and (min-width: 768px) {
+  .c-card__title {
+    font-size: 2rem;
+  }
 }
 .c-card__cases-title {
   font-family: "YuMincho", sans-serif;
@@ -519,10 +534,15 @@ img {
   color: #2f3033;
 }
 .c-card__description {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.5;
   color: #4a5062;
   margin-bottom: 1.3rem;
+}
+@media screen and (min-width: 768px) {
+  .c-card__description {
+    font-size: 1.6rem;
+  }
 }
 .c-card__cases-description {
   font-size: 1.5rem;
@@ -1392,5 +1412,11 @@ img {
 @media screen and (min-width: 768px) {
   .u-show-desktop {
     display: block;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .u-align-left-mobile {
+    text-align: left;
   }
 }/*# sourceMappingURL=style.css.map */
