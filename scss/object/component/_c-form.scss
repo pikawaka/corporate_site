@@ -5,12 +5,15 @@
   &__group {
     display: flex;
     flex-direction: column;
+    gap: 15px;
     margin-bottom: 2.4rem;
 
-    // お問い合わせフォームで１行に２つボックスが入るときのスタイル
-    &--width-half {
+    &__line {
+      align-items: center;
+      gap: 10px;
+
       @include mq {
-        width: 50%;
+        display: flex;
       }
     }
   }
@@ -21,23 +24,86 @@
     color: #A9B1C3;
   }
 
+  &__input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+    &-wrapper {
+      margin-top: 15px;
+
+      @include mq {
+        margin: 0;
+        flex: 1;
+      }
+    }
+  }
+
   &__label  {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: .8rem;
-    margin-bottom: 1rem;
+    font-weight: bold;
+    width: auto;
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+
+    @include mq {
+      width: 150px;
+    }
+
+    &.textarea-label {
+      align-self: flex-start;
+    }
+
+    &__required {
+      background-color: #c70909;
+      color: #fff;
+      font-size: 11px;
+      font-weight: bold;
+      line-height: 1;
+      letter-spacing: .04em;
+      border: 1px solid;
+      padding: 4px;
+      display: inline-block;
+      margin-left: 10px;
+
+      @include mq {
+        display: block;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-right: 10px;
+        padding: 5px;
+        margin-left: 0;
+        align-self: flex-start;
+      }
+
+      &.textarea {
+        margin-top: 0;
+      }
+    }
   }
 
-  &__required {
-    color: #EE5266;
-    font-size: 1.4rem;
-  }
+  &__checkbox {
+    text-align: center;
 
-  &__help {
-    color: #999FAF;
-    font-size: 1.4rem;
-  }
+    &-supplement {
+      text-align: left;
+      margin-top: 24px;
+
+      @include mq {
+        text-align: center;
+      }
+
+      a {
+        color: #797F8C;
+
+        &:hover {
+          color: #3359B8;
+        }        
+      }      
+    }
+  }  
 
   &__field {
     border: 1px solid #C2C8D7;
@@ -46,7 +112,12 @@
   }
 
   &__textarea {
-    height: 300px;
+    height: 200px;
+    width: 100%;
+
+    @include mq {
+      height: 300px;
+    }    
   }
 
   &__select {
@@ -71,17 +142,6 @@
       border-left: 6px solid transparent;
       border-top: 6px solid #797F8C;
       border-bottom: 0;
-    }
-  }
-
-  // お問い合わせで１行にフォームボックスが２つ入る場合のスタイル
-  &__wrapper {
-    @include mq {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 2.5rem;
-      align-items: flex-end;
     }
   }
 }

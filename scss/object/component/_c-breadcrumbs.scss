@@ -4,6 +4,11 @@
   padding: 2rem;
   font-size:1rem;
   max-width: 1060px;
+  
+  &.contact {
+    max-width: 850px;
+  }
+
   @include mq {
     font-size:1.4rem;
     padding: 4rem 2rem;
