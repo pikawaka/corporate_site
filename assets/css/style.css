@@ -592,15 +592,14 @@ img {
 .c-cta__text {
   color: #fff;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   margin-bottom: 2.4rem;
-  text-align: left;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .c-cta__text {
     font-size: 3.2rem;
-    text-align: center;
   }
 }
 
