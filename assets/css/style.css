@@ -531,10 +531,15 @@ img {
 }
 .c-card__cases-title {
   font-family: "YuMincho", sans-serif;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   margin-bottom: 1.5rem;
   line-height: 1.5;
   color: #2f3033;
+}
+@media screen and (min-width: 768px) {
+  .c-card__cases-title {
+    font-size: 2.2rem;
+  }
 }
 .c-card__description {
   font-size: 1.4rem;
@@ -548,10 +553,15 @@ img {
   }
 }
 .c-card__cases-description {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.5;
   color: #2f3033;
   margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .c-card__cases-description {
+    font-size: 1.5rem;
+  }
 }
 
 .c-cta {
@@ -582,13 +592,15 @@ img {
 .c-cta__text {
   color: #fff;
   font-weight: 700;
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   line-height: 1.5;
   margin-bottom: 2.4rem;
+  text-align: left;
 }
 @media screen and (min-width: 768px) {
   .c-cta__text {
     font-size: 3.2rem;
+    text-align: center;
   }
 }
 
@@ -940,6 +952,12 @@ img {
   flex-wrap: wrap;
 }
 
+@media screen and (max-width: 575px) {
+  .p-contact {
+    padding-top: 1.8rem !important;
+  }
+}
+
 .p-contact-thanks {
   text-align: center;
   line-height: 1.8;
@@ -962,7 +980,7 @@ img {
 }
 .p-development__link {
   position: relative;
-  height: 180px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -971,6 +989,11 @@ img {
   background-size: cover;
   background-position: center;
   margin: 0 auto 40px;
+}
+@media screen and (min-width: 768px) {
+  .p-development__link {
+    height: 180px;
+  }
 }
 .p-development__link-text {
   font-size: 2rem;
@@ -1032,11 +1055,12 @@ img {
 .p-development .p-development-item__title {
   text-align: center;
   margin-bottom: 0.8rem;
-  font-size: 2.8rem;
+  font-size: 2.4rem;
 }
 @media screen and (min-width: 768px) {
   .p-development .p-development-item__title {
     text-align: left;
+    font-size: 2.8rem;
   }
 }
 .p-development .p-development-item__description {
@@ -1093,9 +1117,14 @@ img {
 }
 
 .p-training__title {
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   font-weight: 700;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .p-training__title {
+    font-size: 3.2rem;
+  }
 }
 .p-training__items {
   display: flex;
@@ -1133,11 +1162,12 @@ img {
 .p-training .p-training-item__title {
   text-align: center;
   margin-bottom: 1rem;
-  font-size: 2.8rem;
+  font-size: 2.4rem;
 }
 @media screen and (min-width: 768px) {
   .p-training .p-training-item__title {
     text-align: left;
+    font-size: 2.8rem;
   }
 }
 .p-training .p-training-item__descriptions {
@@ -1224,7 +1254,7 @@ img {
   font-size: 3.2rem;
 }
 .p-index-section__title.contact {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 @media screen and (min-width: 768px) {
   .p-index-section__title {
@@ -1312,6 +1342,14 @@ img {
   display: flex;
   flex-direction: column;
   gap: 2.6rem;
+}
+.p-index-message__text-company-name {
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-index-message__text-company-name {
+    font-size: 1.8rem;
+  }
 }
 .p-index-message__text p {
   line-height: 1.8;
