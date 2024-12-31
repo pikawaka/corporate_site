@@ -12,7 +12,7 @@
 
   &__link {
     position: relative;
-    height: 180px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,6 +21,10 @@
     background-size: cover;
     background-position: center; 
     margin: 0 auto 40px;
+
+    @include mq {
+      height: 180px;
+    }
 
     &-text {
       font-size: 2rem;
@@ -86,9 +90,10 @@
     &__title {
       text-align: center;
       margin-bottom: .8rem;
-      font-size: 2.8rem;
+      font-size: 2.4rem;
       @include mq {
         text-align: left;
+        font-size: 2.8rem;
       }
     }
 

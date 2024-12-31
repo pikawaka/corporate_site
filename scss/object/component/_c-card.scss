@@ -145,10 +145,14 @@
   //事例一覧ページのタイトル
   &__cases-title {
     font-family: "YuMincho", sans-serif;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     margin-bottom: 1.5rem;
     line-height: 1.5;
     color: #2f3033;
+
+    @include mq {
+      font-size: 2.2rem;
+    }    
   }
 
   &__description {
@@ -159,13 +163,17 @@
 
     @include mq {
       font-size: 1.6rem;;
-    }    
+    }
   }
   //事例一覧ページのディスクリプション
   &__cases-description {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.5;
     color: #2f3033;
     margin-bottom: 2.5rem;
+
+    @include mq {
+      font-size: 1.5rem;;
+    }
   }
 }

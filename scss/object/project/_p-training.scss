@@ -1,9 +1,13 @@
 @use "../../foundation/mixin" as *;
 .p-training {
   &__title {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     font-weight: 700;
     text-align: center;
+
+    @include mq {
+      font-size: 3.2rem;
+    }
   }
 
   &__items {
@@ -37,9 +41,11 @@
     &__title {
       text-align: center;
       margin-bottom: 1rem;
-      font-size: 2.8rem;
+      font-size: 2.4rem;
+
       @include mq {
         text-align: left;
+        font-size: 2.8rem;
       }
     }
 
