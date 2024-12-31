@@ -276,6 +276,9 @@ img {
   font-size: 1rem;
   max-width: 1060px;
 }
+.c-breadcrumbs.contact {
+  max-width: 850px;
+}
 @media screen and (min-width: 768px) {
   .c-breadcrumbs {
     font-size: 1.4rem;
@@ -592,31 +595,96 @@ img {
 .c-form__group {
   display: flex;
   flex-direction: column;
+  gap: 15px;
   margin-bottom: 2.4rem;
 }
+.c-form__group__line {
+  align-items: center;
+  gap: 10px;
+}
 @media screen and (min-width: 768px) {
-  .c-form__group--width-half {
-    width: 50%;
+  .c-form__group__line {
+    display: flex;
   }
 }
 .c-form input::placeholder, .c-form textarea::placeholder {
   font-size: 1.5rem;
   color: #A9B1C3;
 }
+.c-form__input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.c-form__input-wrapper {
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .c-form__input-wrapper {
+    margin: 0;
+    flex: 1;
+  }
+}
 .c-form__label {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-bottom: 1rem;
+  font-weight: bold;
+  width: auto;
+  display: inline-block;
+  margin: 0;
+  text-align: left;
 }
-.c-form__required {
-  color: #EE5266;
-  font-size: 1.4rem;
+@media screen and (min-width: 768px) {
+  .c-form__label {
+    width: 150px;
+  }
 }
-.c-form__help {
-  color: #999FAF;
-  font-size: 1.4rem;
+.c-form__label.textarea-label {
+  align-self: flex-start;
+}
+.c-form__label__required {
+  background-color: #c70909;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  border: 1px solid;
+  padding: 4px;
+  display: inline-block;
+  margin-left: 10px;
+}
+@media screen and (min-width: 768px) {
+  .c-form__label__required {
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    margin-left: 0;
+    align-self: flex-start;
+  }
+}
+.c-form__label__required.textarea {
+  margin-top: 0;
+}
+.c-form__checkbox {
+  text-align: center;
+}
+.c-form__checkbox-supplement {
+  text-align: left;
+  margin-top: 24px;
+}
+@media screen and (min-width: 768px) {
+  .c-form__checkbox-supplement {
+    text-align: center;
+  }
+}
+.c-form__checkbox-supplement a {
+  color: #797F8C;
+}
+.c-form__checkbox-supplement a:hover {
+  color: #3359B8;
 }
 .c-form__field {
   border: 1px solid #C2C8D7;
@@ -624,7 +692,13 @@ img {
   padding: 10px 16px;
 }
 .c-form__textarea {
-  height: 300px;
+  height: 200px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .c-form__textarea {
+    height: 300px;
+  }
 }
 .c-form__select {
   width: 100%;
@@ -646,15 +720,6 @@ img {
   border-left: 6px solid transparent;
   border-top: 6px solid #797F8C;
   border-bottom: 0;
-}
-@media screen and (min-width: 768px) {
-  .c-form__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 2.5rem;
-    align-items: flex-end;
-  }
 }
 
 /* iPhone、iPdad時にセレクトボックスの背景色が変わるのを防ぐ */
@@ -683,6 +748,10 @@ img {
 }
 .c-section--mw-1060 {
   max-width: 1060px;
+  margin: auto;
+}
+.c-section--mw-850 {
+  max-width: 850px;
   margin: auto;
 }
 
