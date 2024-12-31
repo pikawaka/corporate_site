@@ -656,7 +656,7 @@ img {
 .c-form__label__required {
   background-color: #c70909;
   color: #fff;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: bold;
   line-height: 1;
   letter-spacing: 0.04em;
@@ -664,6 +664,7 @@ img {
   padding: 4px;
   display: inline-block;
   margin-left: 10px;
+  vertical-align: text-bottom;
 }
 @media screen and (min-width: 768px) {
   .c-form__label__required {
@@ -674,6 +675,7 @@ img {
     padding: 5px;
     margin-left: 0;
     align-self: flex-start;
+    vertical-align: unset;
   }
 }
 .c-form__label__required.textarea {
